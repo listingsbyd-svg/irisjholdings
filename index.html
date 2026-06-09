@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Iris & J Holdings LLC | Daiana Castro REALTOR®</title>
+<title>Iris & J Holdings | Daiana Castro REALTOR®</title>
+<meta name="description" content="Iris & J Holdings by Daiana Castro, REALTOR® and Mobile Notary. Buyer consultations, seller strategy calls, mobile notary appointments, and coming soon Orlando vacation rentals.">
 
 <style>
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
   margin:0;
   font-family:Georgia,'Times New Roman',serif;
@@ -14,7 +16,7 @@ body{
   color:#151515;
 }
 header{
-  background:#070707;
+  background:#050505;
   color:white;
   padding:24px 8%;
   display:flex;
@@ -22,6 +24,9 @@ header{
   align-items:center;
   flex-wrap:wrap;
   border-bottom:2px solid #c6a15b;
+  position:sticky;
+  top:0;
+  z-index:100;
 }
 .brand h1{
   margin:0;
@@ -37,8 +42,9 @@ nav a{
   font-weight:bold;
 }
 .hero{
-  min-height:78vh;
-  background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.76)),
+  min-height:88vh;
+  background:
+  linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.78)),
   url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80");
   background-size:cover;
   background-position:center;
@@ -47,91 +53,107 @@ nav a{
   display:flex;
   align-items:center;
 }
-.hero-content{max-width:850px}
+.hero-content{max-width:900px}
 .hero h2{
-  font-size:58px;
+  font-size:64px;
   line-height:1.05;
   margin:0 0 22px;
 }
 .gold{color:#c6a15b}
 .hero p{
   font-size:22px;
-  line-height:1.6;
+  line-height:1.7;
+  max-width:850px;
 }
 .btn{
   display:inline-block;
   background:#c6a15b;
   color:#080808;
-  padding:15px 25px;
-  margin:10px 8px 0 0;
-  border-radius:30px;
+  padding:16px 26px;
+  margin:12px 10px 0 0;
+  border-radius:35px;
   text-decoration:none;
   font-weight:bold;
+  border:1px solid #c6a15b;
 }
+.btn:hover{opacity:.88}
 .btn.dark{
   background:transparent;
   color:white;
   border:1px solid white;
 }
-section{padding:70px 8%}
+section{padding:75px 8%}
 .section-title{
   text-align:center;
-  max-width:900px;
+  max-width:950px;
   margin:0 auto 45px;
 }
 .section-title h2{
-  font-size:42px;
-  margin-bottom:12px;
+  font-size:44px;
+  margin-bottom:14px;
 }
 .section-title p{
-  font-size:18px;
-  line-height:1.7;
+  font-size:19px;
+  line-height:1.8;
 }
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
 }
 .card{
   background:white;
-  padding:32px;
-  border-radius:18px;
-  box-shadow:0 12px 30px rgba(0,0,0,.09);
+  padding:34px;
+  border-radius:20px;
+  box-shadow:0 14px 35px rgba(0,0,0,.10);
   border-top:5px solid #c6a15b;
 }
 .card h3{
   color:#0b0b0b;
-  font-size:28px;
+  font-size:30px;
   margin-top:0;
 }
-.card p,.card li{font-size:16px;line-height:1.7}
+.card p,.card li{
+  font-size:16px;
+  line-height:1.8;
+}
 .dark-section{
   background:#070707;
   color:white;
 }
 .dark-section h2{color:#c6a15b}
+.dark-section .card{color:#151515}
+.highlight{
+  background:#fff;
+  border-radius:24px;
+  padding:50px;
+  box-shadow:0 14px 35px rgba(0,0,0,.10);
+  text-align:center;
+}
+.highlight h2{font-size:42px}
 .coming-soon{
-  background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.7)),
+  background:
+  linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.72)),
   url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1800&q=80");
   background-size:cover;
   background-position:center;
   color:white;
-  border-radius:22px;
-  padding:60px;
+  border-radius:24px;
+  padding:65px;
   text-align:center;
 }
 .coming-soon h3{
   color:#c6a15b;
-  font-size:42px;
+  font-size:44px;
 }
 .contact-box{
   background:white;
-  padding:40px;
-  border-radius:20px;
-  max-width:900px;
+  padding:45px;
+  border-radius:24px;
+  max-width:950px;
   margin:auto;
   text-align:center;
-  box-shadow:0 12px 30px rgba(0,0,0,.09);
+  box-shadow:0 14px 35px rgba(0,0,0,.10);
 }
 .badges{
   display:flex;
@@ -143,7 +165,7 @@ section{padding:70px 8%}
 .badge{
   border:2px solid #c6a15b;
   padding:12px 18px;
-  border-radius:8px;
+  border-radius:10px;
   font-weight:bold;
   color:#c6a15b;
   background:#111;
@@ -162,10 +184,25 @@ footer a{color:#f7f3ea}
   margin-top:25px;
   padding-top:25px;
 }
-@media(max-width:700px){
-  .hero h2{font-size:38px}
+.floating{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#c6a15b;
+  color:#050505;
+  padding:14px 20px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+  z-index:999;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+@media(max-width:750px){
+  .hero h2{font-size:40px}
+  .hero p{font-size:18px}
   nav{margin-top:12px}
   nav a{display:inline-block;margin:8px 10px 0 0}
+  .coming-soon{padding:35px}
 }
 </style>
 </head>
@@ -174,12 +211,12 @@ footer a{color:#f7f3ea}
 
 <header>
   <div class="brand">
-    <h1>Iris & J Holdings LLC</h1>
+    <h1>Iris & J Holdings</h1>
     <p>Real Estate • Mobile Notary • Coming Soon: Vacation Rentals</p>
   </div>
   <nav>
-    <a href="#buy">Buy</a>
-    <a href="#sell">Sell</a>
+    <a href="#services">Services</a>
+    <a href="#book">Book</a>
     <a href="#notary">Notary</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -187,117 +224,136 @@ footer a{color:#f7f3ea}
 
 <section class="hero">
   <div class="hero-content">
-    <h2>Your Goals. Your Timeline. Your <span class="gold">Next Move.</span></h2>
+    <h2>Real Estate Guidance That Feels <span class="gold">Personal, Strategic & Clear.</span></h2>
     <p>
-      Whether you're buying your first home, preparing to sell, exploring investment opportunities,
-      or need a mobile notary, you deserve honest guidance, clear communication, and support that feels personal.
+      Buying, selling, or making big real estate decisions should not feel confusing.
+      I help New Jersey buyers, sellers, and investors understand their options,
+      protect their interests, and move forward with confidence — with real communication,
+      honest guidance, and a plan built around your goals.
     </p>
-    <p><strong>Daiana Castro, REALTOR® & Mobile Notary</strong></p>
+    <p><strong>Daiana Castro, REALTOR® | Mobile Notary</strong></p>
 
-    <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Buyer Consultation Request">Schedule Buyer Consultation</a>
-    <a class="btn dark" href="mailto:listingsbyd@gmail.com?subject=Seller Consultation Request">Schedule Seller Consultation</a>
-    <a class="btn dark" href="mailto:listingsbyd@gmail.com?subject=Mobile Notary Appointment Request">Book Notary Appointment</a>
+    <a class="btn" href="https://calendly.com/listingsbyd/30min" target="_blank">Start Buyer Consultation</a>
+    <a class="btn dark" href="https://calendly.com/listingsbyd/seller-consultation" target="_blank">Request Seller Strategy Call</a>
+    <a class="btn dark" href="https://calendly.com/listingsbyd/mobile-notary-appointment" target="_blank">Book Mobile Notary Service</a>
+    <a class="btn dark" href="https://calendly.com/listingsbyd/general-real-estate-questions-form" target="_blank">Ask a Real Estate Question</a>
   </div>
 </section>
 
 <section>
   <div class="section-title">
-    <h2>More Than Real Estate. More Than Transactions.</h2>
+    <h2>More Than a Transaction. A Plan Built Around You.</h2>
     <p>
-      At Iris & J Holdings LLC, every client relationship starts with one goal:
-      understanding what matters most to you. Whether you're buying, selling, investing,
-      or scheduling a notary appointment, you'll receive professional guidance with a personal touch.
+      Iris & J Holdings was created to bring together real estate guidance, mobile notary support,
+      and future vacation rental services under one polished, client-focused brand.
+      Whether you are buying, selling, investing, or signing important documents,
+      you deserve service that feels professional, prepared, and personal.
     </p>
   </div>
+</section>
 
+<section id="services">
   <div class="cards">
     <div class="card" id="buy">
       <h3>Buy With Confidence</h3>
       <p>
-        Buying a home can feel overwhelming. I help buyers understand their options,
-        prepare for the process, and make informed decisions.
+        Whether you are a first-time buyer, upgrading, downsizing, or investing,
+        I help you understand the process before you feel pressured to make decisions.
       </p>
       <ul>
-        <li>Buyer consultations</li>
+        <li>Buyer consultation</li>
         <li>Budget and location review</li>
         <li>Home search strategy</li>
         <li>Offer preparation support</li>
+        <li>Guidance through contract and closing</li>
       </ul>
-      <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Buyer Consultation Request">Schedule Buyer Consultation</a>
+      <a class="btn" href="https://calendly.com/listingsbyd/30min" target="_blank">Start Buyer Consultation</a>
     </div>
 
     <div class="card" id="sell">
       <h3>Sell With Strategy</h3>
       <p>
-        Selling is more than listing a home. It requires pricing, preparation,
-        marketing, and negotiation aligned with your goals.
+        Selling is not just putting a home online. It takes pricing, preparation,
+        marketing, negotiation, and a clear plan that supports your goals and timeline.
       </p>
       <ul>
-        <li>Home value review</li>
-        <li>Listing preparation</li>
-        <li>Marketing strategy</li>
-        <li>Seller consultation</li>
+        <li>Home value conversation</li>
+        <li>Listing preparation guidance</li>
+        <li>Marketing strategy discussion</li>
+        <li>Timeline and goal review</li>
+        <li>Offer and negotiation support</li>
       </ul>
-      <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Seller Consultation Request">Request Seller Consultation</a>
+      <a class="btn" href="https://calendly.com/listingsbyd/seller-consultation" target="_blank">Request Seller Strategy Call</a>
     </div>
 
     <div class="card" id="notary">
       <h3>Mobile Notary Services</h3>
       <p>
-        Need documents notarized without the hassle? Mobile notary services are available
-        by appointment for individuals, families, and businesses.
+        Need documents notarized without the hassle? Mobile notary appointments are available
+        for clients who need convenient, professional document signing support.
       </p>
       <ul>
         <li>General notarizations</li>
         <li>Real estate documents</li>
         <li>Power of attorney documents</li>
+        <li>Affidavits and consent forms</li>
         <li>Appointment-based service</li>
       </ul>
-      <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Mobile Notary Appointment Request">Book Notary Appointment</a>
+      <a class="btn" href="https://calendly.com/listingsbyd/mobile-notary-appointment" target="_blank">Book Mobile Notary Service</a>
     </div>
   </div>
 </section>
 
-<section class="dark-section">
+<section id="book" class="dark-section">
   <div class="section-title">
-    <h2>Let’s Start With Your Goals</h2>
+    <h2>Schedule the Right Conversation</h2>
     <p>
-      The more I understand your needs, budget, timeline, and concerns, the better I can prepare
-      for our conversation and help you move forward.
+      Choose the option that best fits where you are right now. Whether you are ready to move forward
+      or simply need answers, there is a place to start.
     </p>
   </div>
 
   <div class="cards">
     <div class="card">
-      <h3>Buyer Questions</h3>
-      <ul>
-        <li>Are you pre-approved?</li>
-        <li>What is your budget?</li>
-        <li>What towns are you considering?</li>
-        <li>What are your must-haves?</li>
-        <li>What is your timeline?</li>
-      </ul>
+      <h3>Buyer Consultation</h3>
+      <p>For buyers ready to discuss budget, locations, pre-approval, must-haves, and next steps.</p>
+      <a class="btn" href="https://calendly.com/listingsbyd/30min" target="_blank">Schedule Buyer Call</a>
     </div>
 
     <div class="card">
-      <h3>Seller Questions</h3>
-      <ul>
-        <li>What is the property address?</li>
-        <li>When would you like to sell?</li>
-        <li>Is the property occupied or vacant?</li>
-        <li>What is your ideal sale price?</li>
-        <li>What is your reason for selling?</li>
-      </ul>
+      <h3>Seller Strategy Call</h3>
+      <p>For homeowners who want to discuss value, preparation, timing, and selling options.</p>
+      <a class="btn" href="https://calendly.com/listingsbyd/seller-consultation" target="_blank">Schedule Seller Call</a>
     </div>
 
     <div class="card">
-      <h3>Notary Questions</h3>
-      <ul>
-        <li>What document needs notarization?</li>
-        <li>How many signers?</li>
-        <li>Where should the appointment take place?</li>
-        <li>What date and time do you prefer?</li>
-      </ul>
+      <h3>General Real Estate Questions</h3>
+      <p>Not ready to buy or sell yet? Ask questions and get clarity before making a decision.</p>
+      <a class="btn" href="https://calendly.com/listingsbyd/general-real-estate-questions-form" target="_blank">Ask a Question</a>
+    </div>
+
+    <div class="card">
+      <h3>Mobile Notary Appointment</h3>
+      <p>For notary appointments, document details, signer information, and appointment location.</p>
+      <a class="btn" href="https://calendly.com/listingsbyd/mobile-notary-appointment" target="_blank">Book Notary</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="highlight">
+    <h2>Why Work With Me?</h2>
+    <p>
+      I believe clients deserve more than rushed answers and confusing next steps.
+      My goal is to listen first, explain clearly, and help you make informed decisions
+      with confidence.
+    </p>
+    <div class="badges">
+      <div class="badge">REALTOR®</div>
+      <div class="badge">Mobile Notary</div>
+      <div class="badge">Personal Guidance</div>
+      <div class="badge">Clear Communication</div>
+      <div class="badge">New Jersey Service</div>
     </div>
   </div>
 </section>
@@ -306,8 +362,9 @@ footer a{color:#f7f3ea}
   <div class="coming-soon">
     <h3>Coming Soon: Orlando Vacation Rentals</h3>
     <p>
-      Iris & J Holdings LLC is preparing to expand into vacation rental accommodations
-      designed for families, couples, and travelers visiting Central Florida.
+      Iris & J Holdings is preparing to expand into vacation rental accommodations designed for
+      families, couples, and travelers visiting Central Florida. Property details and booking
+      information will be added once available.
     </p>
     <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Vacation Rental Interest List">Join Interest List</a>
   </div>
@@ -318,23 +375,24 @@ footer a{color:#f7f3ea}
     <h2>Let’s Connect</h2>
     <p>
       Questions about buying, selling, investing, or mobile notary services?
-      I’d love the opportunity to learn more about your goals and discuss how I can help.
+      I would love the opportunity to learn more about your goals and help you take the next step.
     </p>
     <p><strong>Daiana Castro, REALTOR®</strong></p>
-    <p>Mobile Notary | Founder of Iris & J Holdings LLC</p>
+    <p>Mobile Notary | Founder of Iris & J Holdings</p>
     <p>Email: <a href="mailto:listingsbyd@gmail.com">listingsbyd@gmail.com</a></p>
     <p>Phone: <a href="tel:9084996320">(908) 499-6320</a></p>
+    <a class="btn" href="https://calendly.com/listingsbyd/general-real-estate-questions-form" target="_blank">Schedule a Call</a>
   </div>
 </section>
 
 <footer>
-  <h3>Iris & J Holdings LLC</h3>
+  <h3>Iris & J Holdings</h3>
   <p>Real Estate • Mobile Notary • Coming Soon: Vacation Rentals</p>
 
   <div class="badges">
     <div class="badge">REALTOR®</div>
-    <div class="badge">Equal Housing Opportunity</div>
-    <div class="badge">Accessibility Commitment</div>
+    <div class="badge">🏠 Equal Housing Opportunity</div>
+    <div class="badge">♿ Accessibility Commitment</div>
   </div>
 
   <div class="compliance">
@@ -349,20 +407,29 @@ footer a{color:#f7f3ea}
 
     <p>
       Daiana Castro is a REALTOR® affiliated with All Star Real Estate Agency.
-      Iris & J Holdings LLC is a separate business brand and is not a real estate brokerage.
+      Iris & J Holdings is a separate business brand and is not a real estate brokerage.
     </p>
-
-    <p><strong>Equal Housing Opportunity.</strong> Real estate services are offered in accordance with federal, state, and local fair housing laws.</p>
 
     <p>
-      <strong>Accessibility Statement:</strong> Iris & J Holdings LLC is committed to making this website accessible.
-      If you experience difficulty accessing any part of this website, please contact
-      <a href="mailto:listingsbyd@gmail.com">listingsbyd@gmail.com</a> or <a href="tel:9084996320">(908) 499-6320</a>.
+      <strong>Equal Housing Opportunity.</strong>
+      Real estate services are offered in accordance with federal, state, and local fair housing laws.
     </p>
 
-    <p>© 2026 Iris & J Holdings LLC. All rights reserved.</p>
+    <p>
+      <strong>Accessibility Statement:</strong>
+      Iris & J Holdings is committed to making this website accessible to all visitors.
+      If you experience difficulty accessing any part of this website, please contact
+      <a href="mailto:listingsbyd@gmail.com">listingsbyd@gmail.com</a>
+      or <a href="tel:9084996320">(908) 499-6320</a> for assistance.
+    </p>
+
+    <p>© 2026 Iris & J Holdings. All rights reserved.</p>
   </div>
 </footer>
+
+<a class="floating" href="https://calendly.com/listingsbyd/general-real-estate-questions-form" target="_blank">
+Schedule Now
+</a>
 
 </body>
 </html>
