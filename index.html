@@ -1,220 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iris & J Holdings LLC | Daiana Castro REALTOR®</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Iris & J Holdings LLC | Daiana Castro REALTOR®</title>
 
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Georgia, 'Times New Roman', serif;
-      background: #f7f3ea;
-      color: #151515;
-    }
-
-    header {
-      background: #0b0b0b;
-      color: #fff;
-      padding: 22px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      border-bottom: 2px solid #c6a15b;
-    }
-
-    .brand h1 {
-      margin: 0;
-      font-size: 30px;
-      letter-spacing: 1px;
-      color: #c6a15b;
-    }
-
-    .brand p {
-      margin: 5px 0 0;
-      font-size: 15px;
-      color: #f7f3ea;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 18px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .hero {
-      min-height: 78vh;
-      background:
-        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.72)),
-        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 80px 8%;
-    }
-
-    .hero-content {
-      max-width: 780px;
-    }
-
-    .hero h2 {
-      font-size: 58px;
-      line-height: 1.05;
-      margin: 0 0 22px;
-      color: #fff;
-    }
-
-    .hero p {
-      font-size: 21px;
-      line-height: 1.6;
-      color: #f7f3ea;
-    }
-
-    .gold {
-      color: #c6a15b;
-    }
-
-    .buttons {
-      margin-top: 32px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #c6a15b;
-      color: #0b0b0b;
-      padding: 15px 24px;
-      margin: 8px 8px 8px 0;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 1px solid #c6a15b;
-    }
-
-    .btn.dark {
-      background: transparent;
-      color: #fff;
-      border: 1px solid #fff;
-    }
-
-    section {
-      padding: 70px 8%;
-    }
-
-    .section-title {
-      text-align: center;
-      max-width: 850px;
-      margin: 0 auto 45px;
-    }
-
-    .section-title h2 {
-      font-size: 42px;
-      margin-bottom: 12px;
-    }
-
-    .section-title p {
-      font-size: 18px;
-      line-height: 1.7;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: #fff;
-      padding: 32px;
-      border-radius: 18px;
-      box-shadow: 0 12px 30px rgba(0,0,0,.09);
-      border-top: 5px solid #c6a15b;
-    }
-
-    .card h3 {
-      font-size: 27px;
-      margin-top: 0;
-      color: #0b0b0b;
-    }
-
-    .card p, .card li {
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    .dark-section {
-      background: #0b0b0b;
-      color: #fff;
-    }
-
-    .dark-section h2, .dark-section h3 {
-      color: #c6a15b;
-    }
-
-    .contact-box {
-      background: #fff;
-      padding: 35px;
-      border-radius: 18px;
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-      box-shadow: 0 12px 30px rgba(0,0,0,.09);
-    }
-
-    .contact-box a {
-      color: #0b0b0b;
-      font-weight: bold;
-    }
-
-    .coming-soon {
-      background:
-        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.68)),
-        url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1800&q=80");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      border-radius: 20px;
-      padding: 55px;
-      text-align: center;
-    }
-
-    .coming-soon h3 {
-      font-size: 38px;
-      color: #c6a15b;
-      margin-top: 0;
-    }
-
-    footer {
-      background: #050505;
-      color: #f7f3ea;
-      padding: 45px 8%;
-      font-size: 14px;
-      line-height: 1.8;
-      border-top: 2px solid #c6a15b;
-    }
-
-    footer h3 {
-      color: #c6a15b;
-      margin-bottom: 5px;
-    }
-
-    .compliance {
-      margin-top: 25px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,.25);
-    }
-
-    @media (max-width: 700px) {
-      .hero h2 { font-size: 39px; }
-      nav { margin-top: 12px; }
-      nav a { display: inline-block; margin: 8px 10px 0 0; }
-    }
-  </style>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Georgia,'Times New Roman',serif;
+  background:#f7f3ea;
+  color:#151515;
+}
+header{
+  background:#070707;
+  color:white;
+  padding:24px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  border-bottom:2px solid #c6a15b;
+}
+.brand h1{
+  margin:0;
+  color:#c6a15b;
+  font-size:34px;
+  letter-spacing:1.5px;
+}
+.brand p{margin:6px 0 0;color:#f7f3ea}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:bold;
+}
+.hero{
+  min-height:78vh;
+  background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.76)),
+  url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:90px 8%;
+  display:flex;
+  align-items:center;
+}
+.hero-content{max-width:850px}
+.hero h2{
+  font-size:58px;
+  line-height:1.05;
+  margin:0 0 22px;
+}
+.gold{color:#c6a15b}
+.hero p{
+  font-size:22px;
+  line-height:1.6;
+}
+.btn{
+  display:inline-block;
+  background:#c6a15b;
+  color:#080808;
+  padding:15px 25px;
+  margin:10px 8px 0 0;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.btn.dark{
+  background:transparent;
+  color:white;
+  border:1px solid white;
+}
+section{padding:70px 8%}
+.section-title{
+  text-align:center;
+  max-width:900px;
+  margin:0 auto 45px;
+}
+.section-title h2{
+  font-size:42px;
+  margin-bottom:12px;
+}
+.section-title p{
+  font-size:18px;
+  line-height:1.7;
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.card{
+  background:white;
+  padding:32px;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.09);
+  border-top:5px solid #c6a15b;
+}
+.card h3{
+  color:#0b0b0b;
+  font-size:28px;
+  margin-top:0;
+}
+.card p,.card li{font-size:16px;line-height:1.7}
+.dark-section{
+  background:#070707;
+  color:white;
+}
+.dark-section h2{color:#c6a15b}
+.coming-soon{
+  background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.7)),
+  url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  border-radius:22px;
+  padding:60px;
+  text-align:center;
+}
+.coming-soon h3{
+  color:#c6a15b;
+  font-size:42px;
+}
+.contact-box{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,.09);
+}
+.badges{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin:25px 0;
+}
+.badge{
+  border:2px solid #c6a15b;
+  padding:12px 18px;
+  border-radius:8px;
+  font-weight:bold;
+  color:#c6a15b;
+  background:#111;
+}
+footer{
+  background:#050505;
+  color:#f7f3ea;
+  padding:45px 8%;
+  line-height:1.8;
+  border-top:2px solid #c6a15b;
+}
+footer h3{color:#c6a15b}
+footer a{color:#f7f3ea}
+.compliance{
+  border-top:1px solid rgba(255,255,255,.25);
+  margin-top:25px;
+  padding-top:25px;
+}
+@media(max-width:700px){
+  .hero h2{font-size:38px}
+  nav{margin-top:12px}
+  nav a{display:inline-block;margin:8px 10px 0 0}
+}
+</style>
 </head>
 
 <body>
@@ -224,7 +177,6 @@
     <h1>Iris & J Holdings LLC</h1>
     <p>Real Estate • Mobile Notary • Coming Soon: Vacation Rentals</p>
   </div>
-
   <nav>
     <a href="#buy">Buy</a>
     <a href="#sell">Sell</a>
@@ -235,63 +187,71 @@
 
 <section class="hero">
   <div class="hero-content">
-    <h2>Luxury Guidance for Your Next <span class="gold">Real Estate Move</span></h2>
+    <h2>Your Goals. Your Timeline. Your <span class="gold">Next Move.</span></h2>
     <p>
-      Iris & J Holdings LLC is the professional brand of Daiana Castro,
-      REALTOR® and Mobile Notary, offering personalized support for buyers,
-      sellers, investors, and clients who need convenient notary services.
+      Whether you're buying your first home, preparing to sell, exploring investment opportunities,
+      or need a mobile notary, you deserve honest guidance, clear communication, and support that feels personal.
     </p>
+    <p><strong>Daiana Castro, REALTOR® & Mobile Notary</strong></p>
 
-    <div class="buttons">
-      <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Buyer Consultation Request">Schedule Buyer Consultation</a>
-      <a class="btn dark" href="mailto:listingsbyd@gmail.com?subject=Seller Consultation Request">Schedule Seller Consultation</a>
-      <a class="btn dark" href="mailto:listingsbyd@gmail.com?subject=Mobile Notary Appointment Request">Book Notary Appointment</a>
-    </div>
+    <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Buyer Consultation Request">Schedule Buyer Consultation</a>
+    <a class="btn dark" href="mailto:listingsbyd@gmail.com?subject=Seller Consultation Request">Schedule Seller Consultation</a>
+    <a class="btn dark" href="mailto:listingsbyd@gmail.com?subject=Mobile Notary Appointment Request">Book Notary Appointment</a>
   </div>
 </section>
 
 <section>
   <div class="section-title">
-    <h2>Welcome to Iris & J Holdings</h2>
+    <h2>More Than Real Estate. More Than Transactions.</h2>
     <p>
-      A modern, client-focused brand created to support real estate goals,
-      mobile notary needs, and future vacation rental opportunities.
+      At Iris & J Holdings LLC, every client relationship starts with one goal:
+      understanding what matters most to you. Whether you're buying, selling, investing,
+      or scheduling a notary appointment, you'll receive professional guidance with a personal touch.
     </p>
   </div>
 
   <div class="cards">
     <div class="card" id="buy">
-      <h3>Buy a Home</h3>
-      <p>Guidance for buyers looking to understand their budget, location options, timeline, and next steps.</p>
+      <h3>Buy With Confidence</h3>
+      <p>
+        Buying a home can feel overwhelming. I help buyers understand their options,
+        prepare for the process, and make informed decisions.
+      </p>
       <ul>
-        <li>Buyer consultation</li>
-        <li>Pre-approval guidance</li>
+        <li>Buyer consultations</li>
+        <li>Budget and location review</li>
         <li>Home search strategy</li>
         <li>Offer preparation support</li>
       </ul>
-      <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Buyer Consultation Request">Request Buyer Consultation</a>
+      <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Buyer Consultation Request">Schedule Buyer Consultation</a>
     </div>
 
     <div class="card" id="sell">
-      <h3>Sell a Home</h3>
-      <p>Support for homeowners who want to discuss value, timing, preparation, and listing strategy.</p>
+      <h3>Sell With Strategy</h3>
+      <p>
+        Selling is more than listing a home. It requires pricing, preparation,
+        marketing, and negotiation aligned with your goals.
+      </p>
       <ul>
         <li>Home value review</li>
         <li>Listing preparation</li>
         <li>Marketing strategy</li>
-        <li>Offer review support</li>
+        <li>Seller consultation</li>
       </ul>
       <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Seller Consultation Request">Request Seller Consultation</a>
     </div>
 
     <div class="card" id="notary">
-      <h3>Mobile Notary</h3>
-      <p>Appointment-based mobile notary services for clients who need convenient document notarization.</p>
+      <h3>Mobile Notary Services</h3>
+      <p>
+        Need documents notarized without the hassle? Mobile notary services are available
+        by appointment for individuals, families, and businesses.
+      </p>
       <ul>
         <li>General notarizations</li>
         <li>Real estate documents</li>
         <li>Power of attorney documents</li>
-        <li>Travel by appointment</li>
+        <li>Appointment-based service</li>
       </ul>
       <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Mobile Notary Appointment Request">Book Notary Appointment</a>
     </div>
@@ -300,35 +260,38 @@
 
 <section class="dark-section">
   <div class="section-title">
-    <h2>Client Intake Questions</h2>
-    <p>When you reach out, these details help me understand your needs and assist you properly.</p>
+    <h2>Let’s Start With Your Goals</h2>
+    <p>
+      The more I understand your needs, budget, timeline, and concerns, the better I can prepare
+      for our conversation and help you move forward.
+    </p>
   </div>
 
   <div class="cards">
     <div class="card">
-      <h3>Buyer Details</h3>
+      <h3>Buyer Questions</h3>
       <ul>
         <li>Are you pre-approved?</li>
         <li>What is your budget?</li>
         <li>What towns are you considering?</li>
-        <li>How many bedrooms and bathrooms do you need?</li>
+        <li>What are your must-haves?</li>
         <li>What is your timeline?</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Seller Details</h3>
+      <h3>Seller Questions</h3>
       <ul>
         <li>What is the property address?</li>
-        <li>Is the property occupied or vacant?</li>
         <li>When would you like to sell?</li>
+        <li>Is the property occupied or vacant?</li>
+        <li>What is your ideal sale price?</li>
         <li>What is your reason for selling?</li>
-        <li>Do you have a desired sale price?</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Notary Details</h3>
+      <h3>Notary Questions</h3>
       <ul>
         <li>What document needs notarization?</li>
         <li>How many signers?</li>
@@ -341,10 +304,10 @@
 
 <section>
   <div class="coming-soon">
-    <h3>Coming Soon: Vacation Rentals</h3>
+    <h3>Coming Soon: Orlando Vacation Rentals</h3>
     <p>
-      Iris & J Holdings LLC is preparing to expand into vacation rental accommodations.
-      Property details, availability, and booking information will be added once available.
+      Iris & J Holdings LLC is preparing to expand into vacation rental accommodations
+      designed for families, couples, and travelers visiting Central Florida.
     </p>
     <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Vacation Rental Interest List">Join Interest List</a>
   </div>
@@ -352,7 +315,11 @@
 
 <section id="contact">
   <div class="contact-box">
-    <h2>Contact Daiana</h2>
+    <h2>Let’s Connect</h2>
+    <p>
+      Questions about buying, selling, investing, or mobile notary services?
+      I’d love the opportunity to learn more about your goals and discuss how I can help.
+    </p>
     <p><strong>Daiana Castro, REALTOR®</strong></p>
     <p>Mobile Notary | Founder of Iris & J Holdings LLC</p>
     <p>Email: <a href="mailto:listingsbyd@gmail.com">listingsbyd@gmail.com</a></p>
@@ -364,8 +331,14 @@
   <h3>Iris & J Holdings LLC</h3>
   <p>Real Estate • Mobile Notary • Coming Soon: Vacation Rentals</p>
 
+  <div class="badges">
+    <div class="badge">REALTOR®</div>
+    <div class="badge">Equal Housing Opportunity</div>
+    <div class="badge">Accessibility Commitment</div>
+  </div>
+
   <div class="compliance">
-    <h3>Brokerage Disclosure</h3>
+    <h3>Real Estate Brokerage Disclosure</h3>
     <p>
       Real estate services are provided through:
       <br><strong>All Star Real Estate Agency</strong>
@@ -376,14 +349,15 @@
 
     <p>
       Daiana Castro is a REALTOR® affiliated with All Star Real Estate Agency.
+      Iris & J Holdings LLC is a separate business brand and is not a real estate brokerage.
     </p>
 
-    <p><strong>Equal Housing Opportunity.</strong></p>
+    <p><strong>Equal Housing Opportunity.</strong> Real estate services are offered in accordance with federal, state, and local fair housing laws.</p>
 
     <p>
-      Accessibility Statement: Iris & J Holdings LLC is committed to making this website accessible.
+      <strong>Accessibility Statement:</strong> Iris & J Holdings LLC is committed to making this website accessible.
       If you experience difficulty accessing any part of this website, please contact
-      listingsbyd@gmail.com or (908) 499-6320.
+      <a href="mailto:listingsbyd@gmail.com">listingsbyd@gmail.com</a> or <a href="tel:9084996320">(908) 499-6320</a>.
     </p>
 
     <p>© 2026 Iris & J Holdings LLC. All rights reserved.</p>
