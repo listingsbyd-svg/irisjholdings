@@ -4,6 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.userway.org https://*.userway.org; style-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com data:; font-src 'self' data:; connect-src 'self' https://*.userway.org; form-action https://formsubmit.co; frame-src https://calendly.com https://*.calendly.com https://*.userway.org; base-uri 'self'; object-src 'none'; upgrade-insecure-requests;" />
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
+
 <title>Iris & J Holdings | Daiana Castro REALTOR® & Mobile Notary NJ</title>
 <meta name="description" content="Iris & J Holdings by Daiana Castro, REALTOR® and Mobile Notary in New Jersey. Buyer consultations, seller strategy calls, home value reviews, market updates, and mobile notary appointments.">
 
@@ -57,6 +62,7 @@ footer a{color:#f7f3ea}
 .compliance{border-top:1px solid rgba(255,255,255,.25);margin-top:25px;padding-top:25px}
 .policy-box{background:#111;border:1px solid #c6a15b;border-radius:18px;padding:30px;margin-top:30px}
 .floating{position:fixed;right:20px;bottom:20px;background:#c6a15b;color:#050505;padding:14px 20px;border-radius:40px;text-decoration:none;font-weight:bold;z-index:999;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.form-honey{display:none!important;visibility:hidden!important;height:0!important;overflow:hidden!important}
 @media(max-width:750px){.hero h2{font-size:40px}.hero p{font-size:18px}nav{margin-top:12px}nav a{display:inline-block;margin:8px 10px 0 0}.lead-section,.coming-soon{padding:35px}}
 </style>
 </head>
@@ -190,22 +196,23 @@ footer a{color:#f7f3ea}
 
     <form action="https://formsubmit.co/listingsbyd@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New Home Value Request from Iris & J Holdings Website">
-      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
 
       <label>Full Name</label>
-      <input type="text" name="Full Name" required>
+      <input type="text" name="Full Name" maxlength="80" autocomplete="name" required>
 
       <label>Email</label>
-      <input type="email" name="Email" required>
+      <input type="email" name="Email" maxlength="120" autocomplete="email" required>
 
       <label>Phone Number</label>
-      <input type="tel" name="Phone Number" required>
+      <input type="tel" name="Phone Number" maxlength="25" autocomplete="tel" required>
 
       <label>Property Address</label>
-      <input type="text" name="Property Address" required>
+      <input type="text" name="Property Address" maxlength="160" autocomplete="street-address" required>
 
       <label>City / Town</label>
-      <input type="text" name="City or Town" required>
+      <input type="text" name="City or Town" maxlength="80" required>
 
       <label>Property Type</label>
       <select name="Property Type">
@@ -227,7 +234,7 @@ footer a{color:#f7f3ea}
       </select>
 
       <label>Any updates, repairs, or details I should know?</label>
-      <textarea name="Property Notes"></textarea>
+      <textarea name="Property Notes" maxlength="1000"></textarea>
 
       <button class="btn" type="submit">Send My Home Value Request</button>
     </form>
@@ -247,10 +254,11 @@ footer a{color:#f7f3ea}
       <h3>Request Buyer Guide</h3>
       <form action="https://formsubmit.co/listingsbyd@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Buyer Guide Request">
-        <input type="hidden" name="_captcha" value="false">
-        <label>Name</label><input type="text" name="Name" required>
-        <label>Email</label><input type="email" name="Email" required>
-        <label>Phone</label><input type="tel" name="Phone">
+        <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
+        <label>Name</label><input type="text" name="Name" maxlength="80" autocomplete="name" required>
+        <label>Email</label><input type="email" name="Email" maxlength="120" autocomplete="email" required>
+        <label>Phone</label><input type="tel" name="Phone" maxlength="25" autocomplete="tel">
         <label>Are you pre-approved?</label>
         <select name="Pre Approved"><option>No</option><option>Yes</option><option>Working on it</option></select>
         <button class="btn" type="submit">Send Buyer Guide Request</button>
@@ -261,11 +269,12 @@ footer a{color:#f7f3ea}
       <h3>Request Seller Guide</h3>
       <form action="https://formsubmit.co/listingsbyd@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Seller Guide Request">
-        <input type="hidden" name="_captcha" value="false">
-        <label>Name</label><input type="text" name="Name" required>
-        <label>Email</label><input type="email" name="Email" required>
-        <label>Phone</label><input type="tel" name="Phone">
-        <label>Property Address</label><input type="text" name="Property Address">
+        <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
+        <label>Name</label><input type="text" name="Name" maxlength="80" autocomplete="name" required>
+        <label>Email</label><input type="email" name="Email" maxlength="120" autocomplete="email" required>
+        <label>Phone</label><input type="tel" name="Phone" maxlength="25" autocomplete="tel">
+        <label>Property Address</label><input type="text" name="Property Address" maxlength="160" autocomplete="street-address">
         <button class="btn" type="submit">Send Seller Guide Request</button>
       </form>
     </div>
@@ -274,10 +283,11 @@ footer a{color:#f7f3ea}
       <h3>Get Market Updates</h3>
       <form action="https://formsubmit.co/listingsbyd@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Market Update Signup">
-        <input type="hidden" name="_captcha" value="false">
-        <label>Name</label><input type="text" name="Name" required>
-        <label>Email</label><input type="email" name="Email" required>
-        <label>Area of Interest</label><input type="text" name="Area of Interest" placeholder="Union, Middlesex, Essex, Monmouth, etc.">
+        <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
+        <label>Name</label><input type="text" name="Name" maxlength="80" autocomplete="name" required>
+        <label>Email</label><input type="email" name="Email" maxlength="120" autocomplete="email" required>
+        <label>Area of Interest</label><input type="text" name="Area of Interest" maxlength="120" placeholder="Union, Middlesex, Essex, Monmouth, etc.">
         <button class="btn" type="submit">Send Me Market Updates</button>
       </form>
     </div>
@@ -367,18 +377,19 @@ footer a{color:#f7f3ea}
   <div class="form-box">
     <form action="https://formsubmit.co/listingsbyd@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New Newsletter Signup from Iris & J Holdings Website">
-      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
       <input type="hidden" name="Lead Source" value="Newsletter Signup">
       <input type="hidden" name="Add To Contact List" value="Yes">
 
       <label>Full Name</label>
-      <input type="text" name="Full Name" required>
+      <input type="text" name="Full Name" maxlength="80" autocomplete="name" required>
 
       <label>Email</label>
-      <input type="email" name="Email" required>
+      <input type="email" name="Email" maxlength="120" autocomplete="email" required>
 
       <label>Phone Number</label>
-      <input type="tel" name="Phone Number">
+      <input type="tel" name="Phone Number" maxlength="25" autocomplete="tel">
 
       <label>What updates are you interested in?</label>
       <select name="Interest">
@@ -420,6 +431,9 @@ footer a{color:#f7f3ea}
       Iris & J Holdings is preparing to expand into vacation rental accommodations for families,
       couples, and travelers visiting Central Florida.
     </p>
+    <p style="font-size:15px;line-height:1.7;max-width:850px;margin:22px auto 0;">
+      <strong>Disclaimer:</strong> Orlando Vacation Rental services are offered independently through Iris & J Holdings and are not provided through All Star Real Estate Agency. Vacation rental accommodations do not constitute real estate brokerage services.
+    </p>
     <a class="btn" href="mailto:listingsbyd@gmail.com?subject=Vacation Rental Interest List">Join Interest List</a>
   </div>
 </section>
@@ -443,6 +457,7 @@ Founder, Iris & J Holdings</p>
 <footer>
   <h3>Iris & J Holdings</h3>
   <p>Real Estate Guidance • Mobile Notary Services • Vacation Rentals Coming Soon</p>
+  <p><strong>Vacation Rental Disclaimer:</strong> Orlando Vacation Rental services are offered independently through Iris & J Holdings and are not provided through All Star Real Estate Agency. Vacation rental accommodations do not constitute real estate brokerage services.</p>
 
   <div class="badges">
     <div class="badge">REALTOR®</div>
